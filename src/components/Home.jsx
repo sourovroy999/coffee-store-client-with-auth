@@ -7,8 +7,8 @@ const Home = () => {
     const [coffees, setCoffees] = useState(initialCoffees);
 
     return (
-        <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <div className=''>
+            <div className='grid w-xl mx-auto mt-5 grid-cols-1  gap-6'>
                 {
                     coffees.map(coffee => <CoffeeCard 
                         key={coffee._id} 
