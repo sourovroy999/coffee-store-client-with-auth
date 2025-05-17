@@ -22,7 +22,7 @@ const Login = () => {
                 lastSignInTime
             }
 
-            fetch(`http://localhost:3000/users`,{
+            fetch(`https://coffee-store-server-8vlfvm9ux-arkos-projects-d3fcd0dd.vercel.app/users`,{
                 method:'PATCH',
                 headers:{
                     'Content-Type':'application/json'

@@ -21,7 +21,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
             if (result.isConfirmed) {
 
                 // start deleting the coffee
-                fetch(`http://localhost:3000/coffees/${_id}`, {
+                fetch(`https://coffee-store-server-8vlfvm9ux-arkos-projects-d3fcd0dd.vercel.app//coffees/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -46,7 +46,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
     }
 
     return (
-        <div className="card card-side w-sm bg-base-100 shadow-sm bg-sky-400">
+        <div className="card card-side w-sm shadow-sm bg-sky-400">
             <figure>
                 <img
                     src={photo}
